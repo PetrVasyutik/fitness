@@ -1,0 +1,145 @@
+.main-block {
+  width: 100%;
+  background: conic-gradient(from 151deg at 16% 40%, #00359f 25%, #d10a42 75%, #d10a42 81%, #00359f 100%) no-repeat;
+  background-repeat: no-repeat;
+  padding: 51px 0;
+
+  @media (min-width: 1200px) and (max-width: 1350px) {
+    padding-top: 65px;
+  }
+
+  @include vp-1199 {
+    padding-bottom: 80px;
+    background: conic-gradient(from 151deg at 21% 36%, #00359f 25%, #d10a42 75%, #d10a42 81%, #00359f 100%) no-repeat;
+  }
+
+  @include vp-767 {
+    background: conic-gradient(from 195deg at 35% 34%, #00359f 25%, #d10a42 75%, #d10a42 81%, #00359f 100%) no-repeat;
+  }
+}
+
+.main-block__container {
+  display: flex;
+  gap: 64px;
+
+  @include vp-1199 {
+    gap: 30px;
+    padding-top: 33px;
+  }
+}
+
+.main-block__desckription {
+  display: flex;
+  flex-direction: column;
+  max-width: 395px;
+  padding-top: 114px;
+  align-items: end;
+
+  @include vp-1199 {
+    padding-top: 50px;
+    max-width: 48%;
+    flex-basis: 48%;
+  }
+
+  @include vp-767 {
+    max-width: 100%;
+    flex-basis: 100%;
+    padding-top: 26px;
+    align-items: center;
+  }
+}
+
+.main-block__desckription-container {
+  display: flex;
+}
+
+.main-block__city {
+  font-family: $ff-title;
+  color: $color-default-white;
+  font-size: 48px;
+  line-height: 57.6px;
+  font-weight: 600;
+  text-align: right;
+  text-transform: uppercase;
+  padding-right: 50px;
+  margin-bottom: 12px;
+
+  @include vp-1199 {
+    font-size: 34px;
+    line-height: 40.8px;
+    padding-right: 5px;
+    margin-bottom: 5px;
+  }
+
+  @include vp-767 {
+    font-size: 26px;
+    line-height: 33.6px;
+    padding-right: 5px;
+    margin-bottom: 12px;
+  }
+}
+
+.main-block__title-container {
+  text-align: right;
+}
+
+.main-block__title {
+  text-align: right;
+  margin-bottom: 46px;
+
+  @include vp-1199 {
+    margin-bottom: 35px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 22px;
+  }
+}
+
+.main-block__text-container {
+  text-align: right;
+  max-width: 50%;
+  flex-basis: 50%;
+  padding-top: 190px;
+  margin-right: -48px;
+
+  @include vp-1199 {
+    padding-top: 134px;
+    margin-right: -34px;
+  }
+
+  @include vp-767 {
+    padding-top: 124px;
+    margin-right: -98px;
+  }
+}
+
+.main-block__text {
+  font-family: $ff-text;
+  color: $color-default-white;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  display: block;
+  text-align: right;
+}
+
+.main-block__image {
+  @include vp-1199 {
+    width: 324px;
+    height: 390px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.main-block__image img {
+  object-fit: cover;
+
+  @include vp-1199 {
+    width: 324px;
+    height: 390px;
+  }
+}
