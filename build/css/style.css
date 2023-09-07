@@ -442,6 +442,12 @@ a {
   text-decoration: none;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 img,
 video {
   display: block;
@@ -1516,7 +1522,7 @@ button,
   }
 }
 
-.main-block__text-container {
+.main-text__list {
   text-align: right;
   max-width: 50%;
   -ms-flex-preferred-size: 50%;
@@ -1525,19 +1531,19 @@ button,
   margin-right: -48px;
 }
 @media (max-width: 1199px) {
-  .main-block__text-container {
+  .main-text__list {
     padding-top: 134px;
     margin-right: -34px;
   }
 }
 @media (max-width: 767px) {
-  .main-block__text-container {
+  .main-text__list {
     padding-top: 124px;
     margin-right: -98px;
   }
 }
 
-.main-block__text {
+.main-text__item {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   color: #ffffff;
   font-size: 14px;

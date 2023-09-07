@@ -96,7 +96,7 @@
   }
 }
 
-.main-block__text-container {
+.main-text__list {
   text-align: right;
   max-width: 50%;
   flex-basis: 50%;
@@ -114,7 +114,7 @@
   }
 }
 
-.main-block__text {
+.main-text__item {
   font-family: $ff-text;
   color: $color-default-white;
   font-size: 14px;
