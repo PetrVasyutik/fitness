@@ -1,0 +1,193 @@
+.hall {
+  padding: 120px 0;
+
+  @include vp-1199 {
+    padding: 100px 0;
+  }
+
+  @include vp-767 {
+    padding: 63px 0;
+  }
+}
+
+.hall .container {
+  @include vp-767 {
+    padding: 0;
+  }
+}
+
+.hall h2 {
+  @include vp-1199 {
+    padding-right: 14px;
+  }
+
+  @include vp-767 {
+    padding-right: 0;
+  }
+}
+
+.hall__container {
+  display: flex;
+  gap: 72px;
+
+  @include vp-1199 {
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+  }
+
+  @include vp-767 {
+    gap: 26px;
+  }
+}
+
+.hall__description {
+  max-width: 37%;
+  flex-basis: 37%;
+  padding-top: 40px;
+  padding-left: 60px;
+
+  @include vp-1199 {
+    max-width: 100%;
+    flex-basis: 100%;
+    text-align: center;
+    padding: 0 88px;
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
+    text-align: start;
+  }
+}
+
+.hall__subtitle {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  margin-top: 6px;
+
+  @include vp-1199 {
+    margin-top: 0;
+  }
+
+  @include vp-767 {
+    margin-top: 4px;
+  }
+}
+
+.hall__info {
+  margin-top: 40px;
+
+  @include vp-1199 {
+    margin-top: 34px;
+  }
+
+  @include vp-767 {
+    margin-top: 24px;
+  }
+}
+
+.hall__text {
+  font-weight: 300;
+  margin-bottom: 8px;
+
+  @include vp-1199 {
+    &:not(:first-child) {
+      display: none;
+    }
+  }
+}
+
+.hall__img img {
+  object-fit: cover;
+  
+  @include vp-1199 {
+    width: 678px;
+    height: 345px;
+  }
+
+  @include vp-767 {
+    width: 100vw;
+    height: 313px;
+  }
+}
+
+.hall__video {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -112px;
+  margin-left: -423px;
+
+  @media (min-width: 1200px) and (max-width: 1350px) {
+    margin-left: -360px;
+  }
+
+  @include vp-1199 {
+    margin-left: 0;
+    margin-top: -85px;
+  }
+
+  @include vp-767 {
+    margin-left: 0;
+    margin-top: 39px;
+  }
+}
+
+
+
+.hall-video {
+  position: relative;
+}
+
+.hall-video__img {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 364px;
+    height: 228px;
+    background-color: #14367A;
+    opacity: 0.5;
+
+    @include vp-1199 {
+      width: 266px;
+      height: 167px;
+    }
+
+    @include vp-767 {
+      width: 100vw;
+      height: 167px;
+    }
+  }
+}
+
+.hall-video__img img {
+  object-fit: cover;
+
+  @include vp-1199 {
+    width: 266px;
+    height: 167px;
+  }
+
+  @include vp-767 {
+    width: 100vw;
+    height: 167px;
+  }
+}
+
+.hall-video__link {
+  position: absolute;
+  z-index: 10;
+}
+
+.hall-video__link img {
+  @include vp-1199 {
+    width: 73px;
+    height: 73px;
+  }
+}
