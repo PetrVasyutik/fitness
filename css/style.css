@@ -1719,7 +1719,7 @@ button,
   content: "";
   width: 321px;
   height: 384px;
-  background-image: url(../../img/pancakes.jpg);
+  background-image: url(./../img/pancakes.jpg);
 }
 @media (max-width: 1199px) {
   .tickets::before {
@@ -1727,7 +1727,7 @@ button,
     right: 57px;
     width: 289px;
     height: 345px;
-    background-image: url(../../img/pancakes-tablet.jpg);
+    background-image: url(./../img/pancakes-tablet.jpg);
   }
 }
 @media (max-width: 767px) {
