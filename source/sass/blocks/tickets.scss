@@ -1,0 +1,73 @@
+.tickets {
+  position: relative;
+  background-color: $color-ghost-white;
+  padding: 120px 0;
+  text-align: center;
+
+  &::before {
+    position: absolute;
+    bottom: 0;
+    right: -34px;
+    content: '';
+    width: 321px;
+    height: 384px;
+    background-image: url(../../img/pancakes.jpg);
+
+    @include vp-1199 {
+      bottom: 14px;
+      right: 57px;
+      width: 289px;
+      height: 345px;
+      background-image: url(../../img/pancakes-tablet.jpg);
+    }
+
+    @include vp-767 {
+      display: none;
+    }
+  }
+
+  @include vp-1199 {
+    padding: 100px 0;
+  }
+
+  @include vp-767 {
+    padding: 70px 0;
+  }
+}
+
+.tickets__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+
+  @include vp-1199 {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  @include vp-767 {
+    gap: 18px;
+  }
+}
+
+.tickets__btn {
+  color: $color-sapphire;
+  opacity: 0.5;
+  padding: 0;
+  text-transform: none;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: normal;
+  border: none;
+
+  @include vp-1199 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0;
+  }
+}

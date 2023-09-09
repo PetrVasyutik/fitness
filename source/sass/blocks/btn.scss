@@ -13,7 +13,7 @@
   font-weight: 700;
   letter-spacing: 0.6px;
   text-transform: uppercase;
-  
+
   &:disabled {
     opacity: 0.5;
     pointer-events: none;
@@ -27,7 +27,12 @@
 .btn--border-black {
   color: $color-sapphire;
   border: 2px $color-sapphire solid;
-  padding: 0 24px;
+  padding: 23px 42px;
+
+  @include vp-767 {
+    width: 100%;
+    padding: 23px 20px;
+  }
 }
 
 .btn--large {
