@@ -11,14 +11,14 @@
     content: '';
     width: 321px;
     height: 384px;
-    background-image: url(../../img/pancakes.jpg);
+    background-image: url(./../img/pancakes.jpg);
 
     @include vp-1199 {
       bottom: 14px;
       right: 57px;
       width: 289px;
       height: 345px;
-      background-image: url(../../img/pancakes-tablet.jpg);
+      background-image: url(./../img/pancakes-tablet.jpg);
     }
 
     @include vp-767 {
