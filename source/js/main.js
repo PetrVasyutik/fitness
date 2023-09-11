@@ -1,6 +1,5 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initTabs} from './modules/tabs/init-tabs';
-import {Tabs} from './modules/tabs/tabs';
 import {Form} from './modules/form-validate/form';
 
 // ---------------------------------
@@ -22,9 +21,6 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
-    const tabs = new Tabs();
-    window.tabs = tabs;
-    tabs.init();
   });
 });
 

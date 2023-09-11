@@ -20,6 +20,7 @@ html {
   color: $color-sapphire;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
   // оптимизация выравнивания шрифта относительно центра строки
   text-rendering: optimizeLegibility;
   // если по прежнему есть проблемы с выравниванием

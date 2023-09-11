@@ -80,31 +80,20 @@
   &__control {
     cursor: pointer;
     margin: 0 20px;
+    padding-bottom: 12px;
     opacity: 0.5;
-    /*min-width: auto;*/
-    max-width: max-content;
-    justify-content: center;
-    width: 33%;
-    flex-basis: 33%;
     background-color: transparent;
-
-    @media screen and (max-width: 1023px) {
-      /*margin: 0 10px;
-      padding: 15px;*/
-    }
+    border-bottom: 2px transparent solid;
+    transition: border-bottom-color $trans-default;
 
     @media screen and (max-width: 767px) {
       margin: 0;
-      padding: 0;
-      width: 28%;
-      flex-basis: 28%;
     }
 
     &.is-active {
       opacity: 1;
       pointer-events: none;
-      border-bottom: 2px red solid;
-      padding-bottom: 12px;
+      border-color: $color-crimson;
     }
   }
 

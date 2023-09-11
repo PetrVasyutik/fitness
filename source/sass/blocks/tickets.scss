@@ -14,10 +14,10 @@
     background-image: url(./../img/pancakes.jpg);
 
     @include vp-1199 {
-      bottom: 14px;
-      right: 57px;
-      width: 289px;
-      height: 345px;
+      bottom: -11px;
+      right: 0;
+      width: 347px;
+      height: 370px;
       background-image: url(./../img/pancakes-tablet.jpg);
     }
 

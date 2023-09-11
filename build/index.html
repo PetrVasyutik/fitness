@@ -44,7 +44,7 @@
                   <h1 class="main-block__title">Фитнес центр</h1>
                 </div>
               </div>
-              <a class="btn main-block__btn" href="#">Купить абонемент</a>
+              <a class="btn main-block__btn" href="#1">Купить абонемент</a>
             </div>
             <div class="main-block__image">
               <picture>
@@ -92,7 +92,7 @@
           </div>
         </div>
       </section>
-      <section class="tickets">
+      <section class="tickets" id="1">
         <div class="container">
           <h2>Абонементы</h2>
           <div class="tabs no-transition-global" data-tabs="parent" data-delay="300" data-height="max">
@@ -199,8 +199,34 @@
           </div>
         </div>
       </section>
-      <section class="super">
-        <div class="container"></div>
+      <section class="promo">
+        <div class="container">
+          <div class="promo__container">
+            <div class="promo__description">
+              <div class="promo__title">Super games</div>
+              <div class="date">
+                <span class="date__title">Дата</span>
+                <span class="date__day">7</span>
+                <span class="date__month">Марта</span>
+                <span class="date__year">2019</span>
+              </div>
+              <div class="time">
+                <span class="time__title">Время</span>
+                <span class="time__watch">12:00</span>
+              </div>
+              <div class="promo__subtitle">Ежегодные соревнования по CrossFit</div>
+              <a class="btn promo__btn" href="#">Заполнить заявку</a>
+            </div>
+            <div class="promo__image">
+              <picture>
+                <source media="(max-width: 767px)" srcset="./img/super-games-mobile.jpg 1x, ./img/super-games-mobile@2x.jpg 2x">
+                <source media="(max-width: 767px)" srcset="./img/super-games-mobile.webp 1x, ./img/super-games-mobile@2x.webp 2x" type="image/webp">
+                <source srcset="img/super-games.webp 1x, img/super-games@2x.webp 2x" type="image/webp">
+                <img src="img/super-games.jpg" srcset="img/super-games@2x.jpg 2x" width="660" height="500" alt="Мужчина спортивного вида.">
+              </picture>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
