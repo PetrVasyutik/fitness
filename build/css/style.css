@@ -1714,11 +1714,11 @@ button,
 }
 .tickets::before {
   position: absolute;
-  bottom: 0;
+  bottom: -31px;
   right: -34px;
   content: "";
   width: 321px;
-  height: 384px;
+  height: 413px;
   background-image: url(./../img/pancakes.jpg);
 }
 @media (max-width: 1199px) {
