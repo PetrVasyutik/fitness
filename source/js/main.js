@@ -21,6 +21,11 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+
+    const coach = document.querySelector('.coach');
+    coach.addEventListener('click', function () {
+      coach.classList.add('coach__click');
+    });
   });
 });
 

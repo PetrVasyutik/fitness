@@ -8,7 +8,7 @@
     "date date"
     "day month"
     "day year";
-  grid-area: promo-date;
+  /*grid-area: promo-date;*/
   align-items: center;
 
   @include vp-1199 {
@@ -17,7 +17,7 @@
   }
 
   @include vp-767 {
-    max-width: 100px;
+    max-width: 90px;
   }
 }
 
