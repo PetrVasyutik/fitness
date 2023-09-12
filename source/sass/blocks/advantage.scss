@@ -1,0 +1,46 @@
+.advantage {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  max-width: 340px;
+  padding-bottom: 80px;
+}
+
+.advantage--border-bottom {
+  border-bottom: 2px rgba(209, 10, 66, 0.2) solid;
+}
+
+.advantage__unit {
+  font-size: 71px;
+  line-height: 106.5px;
+  font-weight: 700;
+  background: linear-gradient(to bottom right, #D10A42 5%, #0041CA 61%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.advantage__lebel {
+  color: $color-persian-blue;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  margin-top: -22px;
+}
+
+.advantage__description {
+  padding-top: 18px;
+}
+
+.advantage__title {
+  font-size: 22px;
+  line-height: 33px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.advantage__text {
+  font-size: 16px;
+  line-height: 22.4px;
+  font-weight: 300;
+  margin-top: 9px;
+}
