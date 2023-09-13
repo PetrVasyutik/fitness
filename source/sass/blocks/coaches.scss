@@ -12,6 +12,8 @@
 }
 
 .coaches h2 {
+  margin-bottom: 52px;
+  
   @include vp-1199 {
     text-align: center;
   }

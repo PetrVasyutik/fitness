@@ -1,8 +1,50 @@
 .advantages {
-  padding: 95px 0 140px 0;
+  padding: 100px 0 140px 0;
   background-color: $color-ghost-white;
+}
+
+.advantages .container {
+  @include vp-1199 {
+    padding: 0;
+  }
 }
 
 .advantages h2 {
   text-align: center;
+  margin-bottom: 59px;
+
+  @include vp-1199 {
+    margin-bottom: 51px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 27px;
+  }
+}
+
+.advantages__wrapper {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1.25fr 0.5fr 1.25fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 5px;
+  grid-template-areas:
+    ". banner ."
+    ". banner .";
+
+    @include vp-1199 {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 0.25fr 1.2fr 0.25fr;
+      gap: 0px 0px;
+      grid-template-areas:
+        ". ."
+        "banner banner"
+        ". .";
+    }
+
+    @include vp-767 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 }
