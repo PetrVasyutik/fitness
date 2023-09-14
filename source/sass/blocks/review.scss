@@ -1,0 +1,35 @@
+.review {
+  width: 560px;
+  height: 242px;
+  background-color: $color-resolution-blue;
+  display: flex;
+  gap: 28px;
+  padding: 57px 62px;
+ margin: 0 auto;
+}
+
+.review__image {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  padding-top: 7px;
+}
+
+.review__image img {
+  border-radius: 50%;
+}
+
+.review__description {
+  color: $color-default-white;
+}
+
+.review__name {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.review__text {
+  margin-top: 10px;
+  line-height: 23px;
+}

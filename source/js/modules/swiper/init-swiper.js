@@ -1,10 +1,10 @@
 const {Swiper} = window;
 
-let heroSlider;
-let simpleSlider;
+let coachesSlider;
+let reviewsSlider;
 
-const initHeroSlider = () => {
-  heroSlider = new Swiper('.slider--hero', {
+const initCoachesSlider = () => {
+  coachesSlider = new Swiper('.slider-coaches', {
 
     // Optional parameters
     direction: 'horizontal',
@@ -29,30 +29,21 @@ const initHeroSlider = () => {
       },
     },
 
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
 
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
   });
-  window.heroSlider = heroSlider;
+  window.coachesSlider = coachesSlider;
 };
 
-const initSimpleSlider = () => {
-  simpleSlider = new Swiper('.js-simple-swiper', {
+const initReviewsSlider = () => {
+  reviewsSlider = new Swiper('.slider-reviews', {
     // Optional parameters
     direction: 'horizontal',
-    loop: true,
+    centeredSlides: true,
 
     // If we need pagination
     pagination: {
@@ -70,7 +61,7 @@ const initSimpleSlider = () => {
       el: '.swiper-scrollbar',
     },
   });
-  window.simpleSlider = simpleSlider;
+  window.reviewsSlider = reviewsSlider;
 };
 
-export {initHeroSlider, initSimpleSlider, heroSlider, simpleSlider};
+export {initCoachesSlider, initReviewsSlider, coachesSlider, reviewsSlider};

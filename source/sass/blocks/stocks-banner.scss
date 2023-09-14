@@ -11,7 +11,9 @@
   background-color: $color-torchred;
   color: $color-default-white;
   padding: 33px 45px 45px;
-  max-width: 280px;
+  width: 280px;
+  flex-basis: 280px;
+  flex-shrink: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
