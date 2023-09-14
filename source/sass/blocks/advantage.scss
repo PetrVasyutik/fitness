@@ -32,7 +32,7 @@
   padding-left: 32px;
 
   @include vp-1199 {
-    padding-left: 0;
+    padding-left: 21px;
     gap: 28px;
   }
 
@@ -46,7 +46,7 @@
   margin-left: 5px;
 
   @include vp-1199 {
-    margin-left: 15px;
+    margin-left: -20px;
   }
 
   @include vp-767 {

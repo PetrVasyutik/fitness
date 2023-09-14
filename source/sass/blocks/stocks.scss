@@ -1,0 +1,46 @@
+.stocks {
+  padding: 100px 0 55px;
+
+  @include vp-1199 {
+    padding-top: 98px;
+  }
+}
+
+.stocks h2 {
+  text-align: center;
+}
+
+.stocks__wrapper {
+  margin-top: 38px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+
+  @include vp-1199 {
+    flex-direction: column;
+    gap: 31px;
+  }
+
+  @include vp-767 {
+    margin-top: 41px;
+  }
+}
+
+.stocks__list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 40px;
+
+  @include vp-1199 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
