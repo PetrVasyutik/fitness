@@ -1,5 +1,5 @@
 .slider-coaches {
-  height: 294px;
+  height: auto;
 
   @include vp-767 {
     height: 274px;
@@ -23,5 +23,10 @@
     @include vp-767 {
       font-size: 19px;
     }
+  }
+
+
+  .swiper-button-next {
+    right: 0;
   }
 }

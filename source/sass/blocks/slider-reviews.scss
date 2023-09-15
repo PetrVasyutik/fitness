@@ -3,8 +3,14 @@
   height: 242px;
   margin-top: 38px;
 
-  .swiper-wrapper {
+  @include vp-1199 {
+    width: 676px;
+  }
 
+  @include vp-767 {
+    width: 100%;
+    height: 335px;
+    margin-top: 42px;
   }
 
   .swiper-button-next,
@@ -16,6 +22,7 @@
     @include vp-767 {
       width: 10px;
       height: 19px;
+      top: 180px;
     }
   }
 
@@ -26,5 +33,13 @@
     @include vp-767 {
       font-size: 19px;
     }
+  }
+
+  .swiper-button-prev {
+    left: -1px;
+  }
+
+  .swiper-button-next {
+    right: 0px;
   }
 }

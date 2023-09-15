@@ -1,0 +1,42 @@
+.swiper-container {
+  position: relative;
+  padding: 0 60px;
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 16px;
+    height: 32px;
+
+    @include vp-1199 {
+      top: 51%;
+    }
+
+    @include vp-767 {
+      width: 10px;
+      height: 19px;
+    }
+  }
+
+  .swiper-button-next {
+
+    @include vp-1199 {
+      right: 0;
+    }
+  }
+
+  .swiper-button-prev {
+
+    @include vp-1199 {
+      left: 0;
+    }
+  }
+
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    font-size: 32px;
+
+    @include vp-767 {
+      font-size: 19px;
+    }
+  }
+}
