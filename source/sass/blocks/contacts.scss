@@ -15,7 +15,7 @@
   grid-template-columns: 1fr 1fr;
 
   @include vp-1199 {
-    grid-template-columns: 100vw;
+    grid-template-columns: 100%;
   }
 }
 
@@ -93,14 +93,10 @@
 
 .contacts__form,
 .contacts__contacts {
-  max-width: 50%;
-  flex-basis: 50%;
   position: relative;
-  flex-shrink: 0;
 
   @include vp-1199 {
     width: 100%;
-    flex-basis: 100%;
   }
 }
 

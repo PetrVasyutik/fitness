@@ -4328,8 +4328,8 @@ button,
 }
 @media (max-width: 1199px) {
   .contacts__container {
-    -ms-grid-columns: 100vw;
-    grid-template-columns: 100vw;
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
   }
 }
 
@@ -4421,19 +4421,12 @@ button,
 
 .contacts__form,
 .contacts__contacts {
-  max-width: 50%;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
   position: relative;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
 }
 @media (max-width: 1199px) {
   .contacts__form,
 .contacts__contacts {
     width: 100%;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
   }
 }
 
@@ -4481,6 +4474,7 @@ button,
   .contacts-contacts {
     -ms-grid-column-align: unset;
         justify-self: unset;
+    border-top: none;
   }
 }
 
