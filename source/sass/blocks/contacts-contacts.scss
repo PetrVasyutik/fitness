@@ -1,6 +1,6 @@
 .contacts-contacts {
   justify-self: left;
-  max-width: 683px;
+  width: 100%;
   border-top: 1px $color-light-slate-grey solid;
   padding-right: calc(100% - 683px);
 
@@ -14,7 +14,7 @@
   position: relative;
   text-align: left;
   padding-top: 65px;
-  padding-bottom: 65px;
+  padding-bottom: 64px;
   padding-left: 122px;
 
   @include vp-1199 {
@@ -35,7 +35,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 14px 123px;
+  gap: 14px 23px;
   grid-template-areas:
     ". ."
     ". .";
@@ -45,7 +45,7 @@
     content: '';
     position: absolute;
     top: 6px;
-    left: 50%;
+    left: 232px;
     width: 1px;
     height: 103px;
     background-color: $color-light-slate-grey;
