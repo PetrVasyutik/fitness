@@ -96,10 +96,11 @@
   max-width: 50%;
   flex-basis: 50%;
   position: relative;
+  flex-shrink: 0;
 
   @include vp-1199 {
-    max-width: 100%;
-  flex-basis: 100%;
+    width: 100%;
+    flex-basis: 100%;
   }
 }
 
@@ -112,10 +113,8 @@
   padding-bottom: 62px;
 
   @include vp-1199 {
-    max-width: 100vw;
-    padding-right: 0;
-    padding-top: 61px;
-    padding-bottom: 68px;
+    padding: 61px 0 68px 0;
+    max-width: none;
   }
 
   @include vp-767 {
