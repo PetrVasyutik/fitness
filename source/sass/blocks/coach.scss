@@ -2,9 +2,8 @@
   position: relative;
   padding-top: calc(100% * 294/260);
 
-  @media (min-width: 1200px) {
-
     &:hover,
+    &:focus,
     &:focus-within {
       .coach__descpiption {
         flex-direction: column;
@@ -21,7 +20,6 @@
         opacity: 1;
       }
     }
-  }
 
   @include vp-1199 {
     padding-top: calc(100% * 294/268);

@@ -24,13 +24,6 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
   });
-
-  const coach = document.querySelectorAll('.coach');
-  coach.forEach(coachItem => {
-    coachItem.addEventListener('click', function () {
-      coach.classList.add('coach__click');
-    });
-  });
 });
 
 

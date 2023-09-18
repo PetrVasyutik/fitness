@@ -6,24 +6,24 @@
     padding: 0 55px;
   }
 
-  .swiper-button-next,
-  .swiper-button-prev {
+  .swiper-container__button-next,
+  .swiper-container__button-prev {
     width: 16px;
     height: 32px;
     top: 52%;
 
     @include vp-1199 {
-      top: 53%;
+      top: 52%;
     }
 
     @include vp-767 {
       width: 10px;
       height: 19px;
-      top: 55%;
+      top: 54%;
     }
   }
 
-  .swiper-button-next {
+  .swiper-container__button-next {
     right: -56px;
 
     @include vp-1199 {
@@ -31,20 +31,11 @@
     }
   }
 
-  .swiper-button-prev {
+  .swiper-container__button-prev {
     left: -56px;
 
     @include vp-1199 {
       left: 0;
-    }
-  }
-
-  .swiper-button-prev:after,
-  .swiper-button-next:after {
-    font-size: 32px;
-
-    @include vp-767 {
-      font-size: 19px;
     }
   }
 }
