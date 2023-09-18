@@ -4474,7 +4474,7 @@ button,
 .contacts-contacts {
   -ms-grid-column-align: left;
       justify-self: left;
-  max-width: 683px;
+  width: 100%;
   border-top: 1px #74819c solid;
   padding-right: calc(100% - 683px);
 }
@@ -4490,7 +4490,7 @@ button,
   position: relative;
   text-align: left;
   padding-top: 65px;
-  padding-bottom: 65px;
+  padding-bottom: 64px;
   padding-left: 122px;
 }
 @media (max-width: 1199px) {
@@ -4512,11 +4512,11 @@ button,
   position: relative;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 123px 1fr;
+  -ms-grid-columns: 1fr 23px 1fr;
   grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr 14px 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 14px 123px;
+  gap: 14px 23px;
       grid-template-areas: ". ." ". .";
   margin-top: 40px;
 }
@@ -4524,7 +4524,7 @@ button,
   content: "";
   position: absolute;
   top: 6px;
-  left: 50%;
+  left: 232px;
   width: 1px;
   height: 103px;
   background-color: #74819c;
