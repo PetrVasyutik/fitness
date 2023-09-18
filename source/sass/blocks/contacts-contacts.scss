@@ -11,8 +11,8 @@
   max-width: 683px;
   text-align: left;
   padding-left: 122px;
-  padding-top: 61px;
-  padding-bottom: 70px;
+  padding-top: 65px;
+  padding-bottom: 61px;
 
   &::before {
     content: '';
@@ -27,10 +27,12 @@
   @include vp-1199 {
     max-width: 100%;
     padding-left: 148px;
+    padding-top: 65px;
   }
 
   @include vp-767 {
     padding-left: 15px;
+    padding-top: 65px;
   }
 }
 

@@ -2,7 +2,7 @@
   position: relative;
   padding-top: calc(100% * 294/260);
 
-  /*@media (min-width: 1200px) {*/
+  @media (min-width: 1200px) {
 
     &:hover,
     &:focus-within {
@@ -20,7 +20,7 @@
       .coach__list {
         opacity: 1;
       }
-    /*}*/
+    }
   }
 
   @include vp-1199 {
@@ -57,7 +57,7 @@
 
 .coach__descpiption {
   color: $color-default-white;
-  padding: 10px 10px 30px;
+  padding: 23px 10px 23px;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -65,11 +65,11 @@
   background-color: transparent;
 
   @include vp-1199 {
-    padding: 10px 10px 18px;
+    padding: 21px 10px 23px;
   }
 
   @include vp-767 {
-    padding: 42px 23px 23px 22px;
+    padding: 24px 23px 23px 22px;
   }
 }
 

@@ -19,7 +19,7 @@ const initCoachesSlider = () => {
       // when window width is >= 767px
       767: {
         slidesPerView: 2,
-        spaceBetween: 30,
+        spaceBetween: 32,
       },
 
       // when window width is >= 1200px

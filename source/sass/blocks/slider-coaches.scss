@@ -1,32 +1,3 @@
 .slider-coaches {
   height: auto;
-
-  @include vp-767 {
-    height: 274px;
-  }
-
- .swiper-button-next,
- .swiper-button-prev {
-    width: 16px;
-    height: 32px;
-
-    @include vp-767 {
-      width: 10px;
-      height: 19px;
-    }
-  }
-
-  .swiper-button-prev:after,
-  .swiper-button-next:after {
-    font-size: 32px;
-
-    @include vp-767 {
-      font-size: 19px;
-    }
-  }
-
-
-  .swiper-button-next {
-    right: 0;
-  }
 }
