@@ -3515,17 +3515,17 @@ button,
 }
 
 .advantages {
-  padding: 100px 0 140px 0;
+  padding: 100px 0 140px;
   background-color: #f8f9fc;
 }
 @media (max-width: 1199px) {
   .advantages {
-    padding: 96px 0 89px 0;
+    padding: 96px 0 89px;
   }
 }
 @media (max-width: 767px) {
   .advantages {
-    padding: 98px 0 9px 0;
+    padding: 100px 0 9px;
   }
 }
 
@@ -3538,11 +3538,6 @@ button,
 @media (max-width: 1199px) {
   .advantages__container {
     padding: 0;
-  }
-}
-@media (max-width: 767px) {
-  .advantages__container {
-    padding: 0 15px;
   }
 }
 
@@ -4287,8 +4282,8 @@ button,
   }
 }
 @media (max-width: 767px) {
-  .swiper-container .swiper-container {
-    padding: 0 30px;
+  .swiper-container {
+    padding: 0 31px;
   }
 }
 
