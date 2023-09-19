@@ -1,11 +1,7 @@
 const {Swiper} = window;
 
-let coachesSlider;
-let reviewsSlider;
-
 const initCoachesSlider = () => {
-  coachesSlider = new Swiper('.slider-coaches', {
-
+  window.coachesSlider = new Swiper('.slider-coaches', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -34,34 +30,21 @@ const initCoachesSlider = () => {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-
   });
-  window.coachesSlider = coachesSlider;
 };
 
 const initReviewsSlider = () => {
-  reviewsSlider = new Swiper('.slider-reviews', {
+  window.reviewsSlider = new Swiper('.slider-reviews', {
     // Optional parameters
     direction: 'horizontal',
     centeredSlides: true,
-
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
 
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
   });
-  window.reviewsSlider = reviewsSlider;
 };
 
-export {initCoachesSlider, initReviewsSlider, coachesSlider, reviewsSlider};
+export {initCoachesSlider, initReviewsSlider};

@@ -15,6 +15,7 @@
 @import "global/reboot";
 @import "global/utils";
 @import "global/container";
+@import "global/data-tabs.scss";
 
 // Blocks
 // ---------------------------------
@@ -31,7 +32,6 @@
 @import "blocks/tickets";
 @import "blocks/ticket";
 @import "blocks/tabs";
-@import "blocks/data-tabs.scss";
 @import "blocks/price.scss";
 @import "blocks/promo.scss";
 @import "blocks/date.scss";
