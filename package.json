@@ -11,7 +11,8 @@
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --customSyntax postcss-scss",
-    "test": "npm run editorconfig & npm run stylelint & eslint source/js/",
+    "eslint": "eslint source/js/",
+    "test": "npm run editorconfig & npm run stylelint & npm run eslint",
     "build": "gulp build",
     "dev": "gulp dev",
     "start": "gulp start",

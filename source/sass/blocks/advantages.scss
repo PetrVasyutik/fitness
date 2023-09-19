@@ -35,24 +35,24 @@
   justify-items: center;
   grid-template-columns: 1.25fr 0.7fr 1.25fr;
   grid-template-rows: 1fr 1fr;
-  gap: 0px 5px;
+  gap: 0 5px;
   grid-template-areas:
     ". banner ."
     ". banner .";
 
-    @include vp-1199 {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 0.25fr 1.2fr 0.25fr;
-      gap: 0px 0px;
-      grid-template-areas:
-        ". ."
-        "banner banner"
-        ". .";
-    }
+  @include vp-1199 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.25fr 1.2fr 0.25fr;
+    gap: 0 0;
+    grid-template-areas:
+      ". ."
+      "banner banner"
+      ". .";
+  }
 
-    @include vp-767 {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

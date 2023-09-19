@@ -206,7 +206,7 @@
         <div class="container">
           <div class="promo__container">
             <div class="promo__description">
-              <div class="promo__title">Super games</div>
+              <h2 class="promo__title">Super games</h2>
               <div class="promo__date">
                 <div class="date">
                   <span class="date__title">Дата</span>
@@ -233,7 +233,7 @@
           </div>
         </div>
       </section>
-      <sectuion class="coaches" id="2">
+      <section class="coaches" id="2">
         <div class="container">
           <h2>Тренеры</h2>
           <div class="swiper-container">
@@ -397,7 +397,7 @@
             <div class="swiper-button-next swiper-container__button-next"></div>
           </div>
         </div>
-      </sectuion>
+      </section>
       <section class="advantages">
         <div class="container">
           <h2>Наши преимущества</h2>
@@ -506,10 +506,8 @@
                       <img src="img/anna-reviews.jpg" srcset="img/anna-reviews@2x.jpg 2x" width="280" height="462" alt="Фитнес-девушка.">
                     </picture>
                   </div>
-
-                    <div class="review__name">Анна Орлова</div>
-                    <div class="review__text">&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</div>
-
+                  <div class="review__name">Анна Орлова</div>
+                  <div class="review__text">&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</div>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -520,10 +518,8 @@
                       <img src="img/anna-reviews.jpg" srcset="img/anna-reviews@2x.jpg 2x" width="280" height="462" alt="Фитнес-девушка.">
                     </picture>
                   </div>
-
-                    <div class="review__name">Анна Орлова</div>
-                    <div class="review__text">&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</div>
-
+                  <div class="review__name">Анна Орлова</div>
+                  <div class="review__text">&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</div>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -534,10 +530,8 @@
                       <img src="img/anna-reviews.jpg" srcset="img/anna-reviews@2x.jpg 2x" width="280" height="462" alt="Фитнес-девушка.">
                     </picture>
                   </div>
-
-                    <div class="review__name">Анна Орлова</div>
-                    <div class="review__text">&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</div>
-
+                  <div class="review__name">Анна Орлова</div>
+                  <div class="review__text">&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</div>
                 </div>
               </div>
             </div>
@@ -548,26 +542,24 @@
       </section>
       <section class="contacts">
         <div class="contacts__container">
-          <div class="contacts__form-container">
-            <div class="contacts__form">
-              <div class="contacts__form-wrapper" data-form-validate data-callback="base">
-                <div class="contacts__promo">Бесплатное занятие</div>
-                <form method="post" action="https://echo.htmlacademy.ru/">
-                  <div class="contacts__input">
-                    <div class="custom-input" data-validate-type="text" data-limitation="name" data-message-base="Надо заполнить" data-message-extra="Проверьте данные" data-required="data-required">
-                      <label>
-                        <input required type="text" name="Имя" aria-label="Имя" placeholder="Имя">
-                      </label>
-                    </div>
-                    <div class="custom-input" data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-message-base="Надо заполнить" data-message-extra="Проверьте данные" data-message-success="Поле заполнено верно" data-required="data-required">
-                      <label>
-                        <input required type="tel" name="Телефон" aria-label="Номер телефона" placeholder="Телефон">
-                      </label>
-                    </div>
+          <div class="contacts__form">
+            <div class="contacts__form-wrapper" data-form-validate data-callback="base">
+              <div class="contacts__promo">Бесплатное занятие</div>
+              <form method="post" action="https://echo.htmlacademy.ru/">
+                <div class="contacts__inputs">
+                  <div class="custom-input" data-validate-type="text" data-limitation="name" data-message-base="Надо заполнить" data-message-extra="Проверьте данные" data-required="data-required">
+                    <label>
+                      <input required type="text" name="Имя" aria-label="Имя" placeholder="Имя">
+                    </label>
                   </div>
-                  <button class="btn contacts__btn">Отправить</button>
-                </form>
-              </div>
+                  <div class="custom-input" data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-message-base="Надо заполнить" data-message-extra="Проверьте данные" data-message-success="Поле заполнено верно" data-required="data-required">
+                    <label>
+                      <input required type="tel" name="Телефон" aria-label="Номер телефона" placeholder="Телефон">
+                    </label>
+                  </div>
+                </div>
+                <button class="btn contacts__btn">Отправить</button>
+              </form>
             </div>
           </div>
           <div class="contacts-contacts">

@@ -35,16 +35,13 @@
 .contacts-contacts__wrapper {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 14px 23px;
-  grid-template-areas:
-    ". ."
-    ". .";
+  gap: 14px 0;
   margin-top: 40px;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 6px;
     left: 41.5%;

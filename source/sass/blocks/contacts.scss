@@ -19,37 +19,6 @@
   }
 }
 
-.contacts__form-container {
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    background: $color-sapphire;
-    border-top: 1px solid $color-sapphire;
-  }
-}
-
-.contacts__form-wrapper {
-  padding-left: 103px;
-
-  @include vp-1199 {
-    padding-left: 148px;
-    padding-right: 148px;
-  }
-
-  @include vp-767 {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
 
 .contacts__promo {
   position: relative;
@@ -71,14 +40,14 @@
     font-size: 32px;
     line-height: 38.4px;
     letter-spacing: 0.96px;
-    margin-bottom: 15px;
     font-weight: 600;
     margin-bottom: 26px;
   }
 }
 
-.contacts__input {
-  display: flex;
+.contacts__inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 30px;
 
   @include vp-1199 {
@@ -101,12 +70,8 @@
 }
 
 .contacts__form {
-  max-width: 683px;
-  text-align: left;
-  padding-right: 170px;
-  padding-left: calc(100% - 683px);
-  padding-top: 57px;
-  padding-bottom: 62px;
+  background-color: $color-sapphire;
+  border-top: 1px solid $color-sapphire;
 
   @include vp-1199 {
     padding: 61px 0 68px 0;
@@ -115,6 +80,24 @@
 
   @include vp-767 {
     padding-top: 66px;
+  }
+}
+
+.contacts__form-wrapper {
+  text-align: left;
+  padding-right: 170px;
+  padding-left: calc(100% - 580px);
+  padding-top: 57px;
+  padding-bottom: 62px;
+
+  @include vp-1199 {
+    padding-left: 148px;
+    padding-right: 148px;
+  }
+
+  @include vp-767 {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 

@@ -3,7 +3,7 @@
   display: grid;
   grid-template-rows: 0.2fr 0.3fr;
   grid-template-columns: 0.5fr;
-  
+
   @include vp-1199 {
     margin-top: -5px;
   }

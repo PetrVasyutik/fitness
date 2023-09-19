@@ -8,7 +8,7 @@
   display: grid;
   grid-template-columns: 80px 1fr;
   grid-template-rows: 0.1fr 1fr;
-  gap: 0px 28px;
+  gap: 0 28px;
   grid-template-areas:
     "img name"
     "img text";
@@ -22,7 +22,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 68px 1fr;
-    gap: 0px 0px;
+    gap: 0 0;
     grid-template-areas:
       "img name"
       "text text";
