@@ -589,6 +589,11 @@ template {
     height: 19px;
   }
 }
+.swiper-button-prev:hover, .swiper-button-prev:focus,
+.swiper-button-next:hover,
+.swiper-button-next:focus {
+  opacity: 0.7;
+}
 
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
@@ -1731,7 +1736,6 @@ button,
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  max-width: 300px;
   min-height: 31px;
   margin-left: auto;
   padding: 5px 10px 8px 0;
@@ -2762,7 +2766,7 @@ button,
 }
 @media (max-width: 767px) {
   .tickets__container {
-    gap: 18px;
+    gap: 17px;
   }
 }
 
@@ -2816,7 +2820,7 @@ button,
 @media (max-width: 767px) {
   .ticket {
     width: 100%;
-    padding: 55px 20px;
+    padding: 55px 34px;
   }
 }
 
@@ -2962,7 +2966,7 @@ button,
 }
 @media screen and (max-width: 767px) {
   .tabs__element {
-    padding: 15px;
+    padding: 15px 0;
   }
 }
 .tabs--unset .tabs__content {
