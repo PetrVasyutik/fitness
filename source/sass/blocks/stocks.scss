@@ -19,6 +19,7 @@
   display: flex;
   justify-content: space-between;
   gap: 40px;
+  flex-wrap: wrap;
 
   @include vp-1199 {
     flex-direction: column;
@@ -30,13 +31,24 @@
   }
 }
 
+.stocks__banner {
+  width: calc(50% - 20px);
+  flex-basis: calc(50% - 20px);
+
+  @include vp-1199 {
+    width: 100%;
+  }
+}
+
 .stocks__list {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: calc(50% - 20px);
+  flex-basis: calc(50% - 20px);
   gap: 40px;
 
   @include vp-1199 {
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;

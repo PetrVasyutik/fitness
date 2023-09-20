@@ -59,6 +59,10 @@
   font-weight: 700;
   line-height: 16.41px;
   margin-top: 20px;
+
+  @include vp-767 {
+    margin-top: 0;
+  }
 }
 
 .stocks-banner__image {
