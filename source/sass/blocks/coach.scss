@@ -66,6 +66,10 @@
   overflow-y: auto;
   background-color: transparent;
 
+  @media (min-width: 1200px) and (max-width: 1220px) {
+    padding-bottom: 20px;
+  }
+
   @include vp-1199 {
     padding: 21px 10px 23px;
   }

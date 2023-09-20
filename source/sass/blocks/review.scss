@@ -1,10 +1,8 @@
 .review {
   width: 560px;
-  height: 242px;
   background-color: $color-resolution-blue;
-  padding: 57px 62px 10px;
+  padding: 57px 62px 55px;
   margin: 0 auto;
-  overflow-y: auto;
   display: grid;
   grid-template-columns: 80px 1fr;
   grid-template-rows: 0.1fr 1fr;
@@ -27,8 +25,7 @@
       "img name"
       "text text";
     width: calc(100% - 64px);
-    height: 335px;
-    padding: 34px 25px;
+    padding: 34px 25px 35px;
   }
 }
 

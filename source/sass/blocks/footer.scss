@@ -49,6 +49,10 @@
 .footer__item--logo {
   margin-right: 237px;
 
+  @media (min-width: 1200px) and (max-width: 1250px) {
+    margin-right: 157px;
+  }
+
   @include vp-1199 {
     margin-right: 32px;
     width: 82px;

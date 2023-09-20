@@ -1,13 +1,13 @@
 .reviews {
-  padding: 65px 0;
+  padding: 65px 0 63px;
 
   @include vp-1199 {
-    padding: 35px 0;
+    padding: 35px 0 33px;
     margin-top: 2px;
   }
 
   @include vp-767 {
-    padding: 5px 0;
+    padding: 7px 0;
   }
 }
 

@@ -23,6 +23,14 @@
     width: 100%;
     padding: 55px 34px;
   }
+
+  &:nth-child(2n) {
+    @include vp-767 {
+      padding-top: 43px;
+      padding-bottom: 47px;
+      margin-bottom: -3px;
+    }
+  }
 }
 
 .ticket h3 {

@@ -1,4 +1,9 @@
 .social {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 11px;
+
+  @include vp-767 {
+    max-width: 97px;
+  }
 }

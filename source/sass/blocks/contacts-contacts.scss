@@ -37,7 +37,7 @@
   display: grid;
   grid-template-columns: 1.1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 14px 0;
+  gap: 19px 0;
   margin-top: 40px;
 
   &::before {
@@ -94,6 +94,7 @@
 }
 
 .contacts-contacts__text {
+  display: grid;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -102,6 +103,14 @@
   @include vp-1199 {
     font-size: 18px;
     line-height: 27.42px;
+  }
+}
+
+.contacts-contacts__unit {
+  max-width: 170px;
+
+  @include vp-1199 {
+    max-width: 218px;
   }
 }
 

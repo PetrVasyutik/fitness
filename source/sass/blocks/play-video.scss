@@ -22,7 +22,7 @@
 
     @include vp-767 {
       width: 100vw;
-      height: 167px;
+      height: 100%;
     }
   }
 }
@@ -37,7 +37,7 @@
 
   @include vp-767 {
     width: 100vw;
-    height: 167px;
+    height: auto;
   }
 }
 
