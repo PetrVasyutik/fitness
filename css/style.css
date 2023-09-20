@@ -3914,6 +3914,8 @@ button,
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 40px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media (max-width: 1199px) {
   .stocks__wrapper {
@@ -3930,6 +3932,17 @@ button,
   }
 }
 
+.stocks__banner {
+  width: calc(50% - 20px);
+  -ms-flex-preferred-size: calc(50% - 20px);
+      flex-basis: calc(50% - 20px);
+}
+@media (max-width: 1199px) {
+  .stocks__banner {
+    width: 100%;
+  }
+}
+
 .stocks__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3938,11 +3951,14 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
+  width: calc(50% - 20px);
+  -ms-flex-preferred-size: calc(50% - 20px);
+      flex-basis: calc(50% - 20px);
   gap: 40px;
 }
 @media (max-width: 1199px) {
   .stocks__list {
+    width: 100%;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
@@ -4045,6 +4061,11 @@ button,
   font-weight: 700;
   line-height: 16.41px;
   margin-top: 20px;
+}
+@media (max-width: 767px) {
+  .stocks-banner__link {
+    margin-top: 0;
+  }
 }
 
 .stocks-banner__image {
