@@ -17,6 +17,7 @@
 
   @include vp-767 {
     flex-direction: column;
+    column-count: 2;
   }
 }
 
@@ -40,7 +41,7 @@
   }
 
   @include vp-767 {
-    display: block;
+    display: contents;
     column-count: 2;
     gap: 75px;
 
@@ -58,9 +59,9 @@
 .footer__logo--desktop {
   margin-right: 35px;
 
-  @include vp-767 {
+  /*@include vp-767 {
     display: none;
-  }
+  }*/
 }
 
 .footer__item--logo {

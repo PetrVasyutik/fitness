@@ -2893,6 +2893,13 @@ button,
 .tabs {
   max-width: 100%;
   margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 @media (max-width: 1199px) {
   .tabs {
@@ -2925,26 +2932,26 @@ button,
 }
 .tabs__controls {
   position: relative;
-  /*display: flex;
-  justify-content: center;
-  gap: 4px;*/
-  width: 100%;
   margin: 0 auto;
   margin-bottom: 33px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 .tabs__controls::before {
   content: "";
   position: absolute;
   bottom: 0;
-  left: calc(50% - 172px);
-  width: 345px;
+  left: 20px;
+  width: calc(100% - 30px);
   height: 2px;
   background-color: #787878;
   opacity: 0.2;
 }
 @media (max-width: 1199px) {
   .tabs__controls::before {
-    width: 335px;
+    left: 25px;
+    width: calc(100% - 45px);
   }
 }
 @media (max-width: 767px) {
@@ -2961,10 +2968,6 @@ button,
 }
 @media (max-width: 767px) {
   .tabs__controls {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    gap: 14px;
     margin-bottom: 9px;
   }
 }
@@ -2991,7 +2994,12 @@ button,
 }
 @media screen and (max-width: 767px) {
   .tabs__control {
-    margin: 0;
+    margin: 0 39px 0 0;
+  }
+}
+@media (max-width: 767px) {
+  .tabs__control:nth-child(3n) {
+    margin-right: 0;
   }
 }
 .tabs__control.is-active {
@@ -4704,6 +4712,9 @@ button,
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
   }
 }
 
@@ -4741,7 +4752,7 @@ button,
 }
 @media (max-width: 767px) {
   .footer__list {
-    display: block;
+    display: contents;
     -webkit-column-count: 2;
        -moz-column-count: 2;
             column-count: 2;
@@ -4760,11 +4771,9 @@ button,
 
 .footer__logo--desktop {
   margin-right: 35px;
-}
-@media (max-width: 767px) {
-  .footer__logo--desktop {
+  /*@include vp-767 {
     display: none;
-  }
+  }*/
 }
 
 .footer__item--logo {
