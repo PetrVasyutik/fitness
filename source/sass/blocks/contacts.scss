@@ -6,7 +6,7 @@
   }
 
   @include vp-767 {
-    margin-top: 61px;
+    margin-top: 59px;
   }
 }
 
@@ -83,7 +83,7 @@
 
 .contacts__form-wrapper {
   text-align: left;
-  padding: 57px 170px 62px calc(100% - 580px);
+  padding: 57px 170px 68px calc(100% - 580px);
 
   @include vp-1199 {
     padding: 61px 148px 68px 148px;

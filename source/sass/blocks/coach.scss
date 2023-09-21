@@ -19,6 +19,10 @@
     .coach__list {
       opacity: 1;
     }
+
+    .coach__descpiption {
+      overflow-y: auto;
+    }
   }
 
   @include vp-1199 {
@@ -63,7 +67,6 @@
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  overflow-y: auto;
   background-color: transparent;
 
   @media (min-width: 1200px) and (max-width: 1220px) {
