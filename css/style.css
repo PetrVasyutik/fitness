@@ -2271,17 +2271,10 @@ button,
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  margin-left: 41px;
 }
 @media (max-width: 1199px) {
   .header-phone {
     margin-left: 0;
-  }
-}
-@media (max-width: 767px) {
-  .header-phone {
-    display: -ms-grid;
-    display: grid;
   }
 }
 
@@ -2292,7 +2285,7 @@ button,
   line-height: 31.2px;
   font-weight: 600;
   letter-spacing: 0.78px;
-  margin-left: 95px;
+  margin-left: 94px;
 }
 @media (max-width: 1199px) {
   .header__phone {
@@ -2997,7 +2990,6 @@ button,
 }
 .tabs__control.is-active {
   opacity: 1;
-  pointer-events: auto;
   border-color: #d10a42;
 }
 .tabs__content {
