@@ -7,6 +7,7 @@
   justify-content: space-between;
   color: $color-resolution-blue;
   padding: 23px 35px 29px 28px;
+  height: 100%;
 
   @include vp-1199 {
     height: 100%;

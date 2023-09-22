@@ -3409,9 +3409,6 @@ button,
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: rgba(16, 38, 84, 0.85);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding-bottom: 10px;
 }
 .coach:hover .coach__subtitle, .coach:focus .coach__subtitle, .coach:focus-within .coach__subtitle {
@@ -4102,6 +4099,7 @@ button,
           justify-content: space-between;
   color: #1c3374;
   padding: 23px 35px 29px 28px;
+  height: 100%;
 }
 @media (max-width: 1199px) {
   .stock {
@@ -4183,6 +4181,7 @@ button,
 
 .review {
   width: 560px;
+  height: 100%;
   background-color: #1c3374;
   padding: 57px 62px 55px;
   margin: 0 auto;
